@@ -77,7 +77,7 @@ header{
     transform: scaleX(1);
 }
 
-/*------------------------header------------------*/
+
 
 /*------------------------section bg------------------*/
 
@@ -168,7 +168,7 @@ header{
 }
 
 .intro p{
-    margin-top: 50px;
+    margin-top: 60px;
     font-family: 'Gantari', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -234,7 +234,7 @@ header{
     font-family: 'island moments', cursive;
     font-weight: 100;
     margin: 20px 0;
-    font-size: 120px;
+    font-size: 150px;
     color: #f1e5d1;
     margin-top: 40px;
 }
@@ -264,7 +264,7 @@ header{
 .method p{
     text-align: left;
     font-family: 'Gantari', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.5;
     color: #d4c4b6;
@@ -273,7 +273,7 @@ header{
 }
 
 
-.card {
+.radcard {
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -292,12 +292,12 @@ header{
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 0px;
     width: fit-content;
     height: fit-content;
 }
 
-.card img{
+.radcard img{
     max-width: 500px;
     height: auto;
     border-radius: 10px;
@@ -312,13 +312,148 @@ header{
     padding-left: 50px;
     list-style-type: circle; /* You can use circle, square, or none */
     text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+.trans_list li , .scat_list li{
     font-family: 'Gantari', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.5;
     color: #d4c4b6;
-    margin-bottom: 30px;
-  }
+}
+
+.method h5{
+    font-family: 'island moments', cursive;
+    font-weight: 100;
+    font-size: 100px;
+    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: left;
+    width: 100%;
+    color: #f1e5d1;
+
+}
+
+.wrapper {
+    margin-top: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card > .row > .icon {
+    background: #D4C4B6;
+    color: #2b2b2b;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    overflow: visible; /* Ensure overflowed content is visible */
+    height: auto;
+    margin-top: 15px;
+}
+
+.card > .row > .description > h4 {
+    font-size: 28px;
+    font-family: 'libre baskerville', serif;
+    font-weight: 800;
+    color: #231709;
+    margin: 0;
+}
+
+.card > .row > .description > p {
+    font-size: 20px;
+    font-family: 'Gantari', sans-serif;
+    font-weight: 400;
+    color: #231709;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('Amp.jpg');
+}
+.card[for="c2"] {
+    background-image: url('SCA.jpg');
+}
+.card[for="c3"] {
+    background-image: url('HV.jpg');
+}
+.card[for="c4"] {
+    background-image: url('LV.jpg');
+}
+.card[for="c5"] {
+    background-image: url('./img4.jpeg');
+}
 /*------------------------result------------------*/
 /*------------------------ref------------------*/
 /*------------------------contact------------------*/
