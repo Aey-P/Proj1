@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Scope+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #B18F6A, #9C6B4F);
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+  
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*------------------------header------------------*/
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex; /* arrange item in row or column in 1 dimension */
+    justify-content: space-between; /* arrange fb */
+    align-items: center;
+    z-index: 99; /*Layering to front>*/
+    background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.logo {
+    font-size: 2em; /* 2em = 32px */
+    font-family: 'gantari', sans-serif;
+    background: linear-gradient(90deg, black, #c78c06);
+    -webkit-background-clip: text; /* Apply the background to the text */
+    background-clip: text; /* Standard property for compatibility */
+    color: transparent;
+    user-select: none; /* disable text selection */
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #383838;
+    text-decoration: none;
+    font-family: 'gantari', sans-serif;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*------------------------header------------------*/
+
+/*------------------------section bg------------------*/
+
+#home { background-color: none }
+#Intro {background: linear-gradient(135deg, #D4C4B6, #A88F7C); }
+#Method { background: linear-gradient(135deg, #8B5E3C, #70422A);}
+#Result { background: linear-gradient(135deg, #C9A27E, #B6885A); }
+#Ref { background: linear-gradient(135deg, #7A5C4F, #594039); }
+#Contact { background: linear-gradient(135deg, #F2E5D7, #DBC4B2); }
+
+/*------------------------section bg------------------*/
+
+/*------------------------section------------------*/
+
+#home,
+#Intro,
+#Method,
+#Result,
+#Ref,
+#Contact {
+  height: 100vh;         /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  scroll-snap-align: start; /* For optional snap scrolling */
+}
+
+
+/*------------------------projname------------------*/
+
+.projname h1 {
+    position: relative;
+    font-size: 55px;
+    font-family: 'libre baskerville', serif;
+    font-weight: 700;
+    margin: 20px 0;
+    margin-top: 100px;
+    color: #231709;
+    font-weight: 500;
+    justify-content: center;    /* Center horizontally */
+    align-items: center;   
+}
+
+/*------------------------name------------------*/
+
+.name {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    width: 100%;
+}
+
+.name .me, .aj{
+    margin: auto;
+}
+
+.name p{
+    margin: 10px 0;
+    font-size: 14px;
+    font-family:'Gantari', sans-serif;
+    color: #2b2b2b;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/*------------------------intro------------------*/
+
+.Intro{
+    position: relative;
+    font-size: 1.2em;
+    font-family: 'scope one', sans-serif;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    justify-content: center;    /* Center horizontally */
+    align-items: center;   
+}
+
+/*------------------------method------------------*/
+/*------------------------result------------------*/
+/*------------------------ref------------------*/
+/*------------------------contact------------------*/
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Icon styling */
+.mail i {
+    font-size: 40px; /* Adjust the size */
+    color: white;
+    margin: 15px;
+}
+
+.ig i {
+    font-size: 40px; /* Adjust the size */
+    background: linear-gradient(135deg, #515BD4, #DD2A7B, #FEDA77); /* Adjust colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px;
+}
+
+.github i {
+    font-size: 40px; /* Adjust the size */
+    color: black;
+    margin: 15px;
+}
+
+.link span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+.link a, .link p {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;  /* Adjust text size */
+    color: white;  /* Match your design */
+    margin: 0;
+}
+
+.mail p{
+    font-family: 'tektur', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ig a {
+    font-family: 'tektur', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.github a {
+    font-family: 'tektur', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+    }
+}
