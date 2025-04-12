@@ -87,7 +87,6 @@ header{
 #Ref { background: linear-gradient(135deg, #7A5C4F, #594039); }
 #Contact { background: linear-gradient(135deg, #F2E5D7, #DBC4B2); }
 
-/*------------------------section bg------------------*/
 
 /*------------------------section------------------*/
 
@@ -108,7 +107,7 @@ header{
 }
 
 
-/*------------------------projname------------------*/
+/*------------------------Home/projname------------------*/
 
 .projname h1 {
     position: relative;
@@ -123,7 +122,7 @@ header{
     align-items: center;   
 }
 
-/*------------------------name------------------*/
+/*------------------------Home/name------------------*/
 
 .name {
     text-align: left;
@@ -160,6 +159,49 @@ header{
     justify-content: center;    /* Center horizontally */
     align-items: center;   
 }
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+  
+.slideshow-container {
+    position: relative;
+    text-align: center;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.3s;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
+
 
 /*------------------------method------------------*/
 /*------------------------result------------------*/

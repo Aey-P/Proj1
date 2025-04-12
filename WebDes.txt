@@ -1,0 +1,55 @@
+[Home]
+Liquid level and volume measurement systems using radiation transmission technique
+Presented by 
+Palida Singhapan NE06
+Poowanut Wattanasatean NE06
+Adviser
+Kamontip Ploykrachang
+Decho Thong-Aram
+
+
+{menu}
+Introduction
+Method
+Result & Discussion
+References
+Contact
+
+/--------------------------------------------------------------/
+
+[Intro]
+This project, developed from September 2024 to April 2025, aims to develop a radiation transmission technique to be utilized in industrial quality control processes and in-process measurements.
+
+In the beginning, we developed this project for our microcontroller project. The process involves a 1x1 NaI detector that detects radiation and sends an electric signal to the General Purpose Scaler, LUDLUM M2000, for signal processing. Then, the square wave output is directed to our microcontroller for counting, calibration, and calculations of the liquid quantity in small containments such as soft drink cans.
+
+However, this system required LUDLUM M2000 to be implemented. Therefore, why don’t we create an instrument that can both count like LUDLUM and measure liquid quantity simultaneously?
+
+/--------------------------------------------------------------/
+
+[Method]
+*Non-destructive testing*
+Noninvasive techniques to determine component or structure or quantitively measurement
+(Inspect or measure without doing harm)
+Detection/Location/Measurement/Characterization
+
+*Radiation transmission Technique*
+Transmission
+Scattering
+
+/--------------------------------------------------------------/
+
+[Result]
+*Electronic Test*
+Amplify/SCA/HV
+
+*Measurement Test*
+Cs Spectrum/Water Mea
+
+/--------------------------------------------------------------/
+
+[Ref]
+
+
+/--------------------------------------------------------------/
+
+[Contact]
