@@ -50,12 +50,12 @@ header{
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 20px;
     color: #383838;
     text-decoration: none;
     font-family: 'gantari', sans-serif;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .navigation a::after {
@@ -141,7 +141,7 @@ header{
 
 .name p{
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family:'Gantari', sans-serif;
     color: #2b2b2b;
     font-weight: 400;
@@ -170,7 +170,7 @@ header{
 .intro p{
     margin-top: 60px;
     font-family: 'Gantari', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
     color: #2b2b2b;
@@ -196,10 +196,10 @@ header{
     top: 50%;
     padding: 12px;
     margin-top: -22px;
-    color: white;
+    color: rgb(70, 70, 70);
     font-weight: bold;
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.793);
     border: none;
     border-radius: 5px;
     z-index: 1;
@@ -207,7 +207,7 @@ header{
 }
   
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.27);
 }
   
 .prev {
@@ -243,7 +243,7 @@ header{
 .method h2 {
     font-family: 'libre baskerville', serif;
     font-weight: 100;
-    font-size: 34px;
+    font-size: 36px;
     margin: 20px 0;
     text-align: left;
     width: 100%;
@@ -253,9 +253,10 @@ header{
 .method h3{
     font-family: 'coming soon', cursive;
     font-weight: 100;
-    margin: 20px 0;
+    margin: 40px 0;
+    margin-top: 60px;
     margin-bottom: 60px;
-    font-size: 20px;
+    font-size: 22px;
     color: #D4C4B6;
 
 
@@ -268,7 +269,7 @@ header{
     font-weight: 400;
     line-height: 1.5;
     color: #d4c4b6;
-    margin: 20px 0;
+
     
 }
 
@@ -318,7 +319,7 @@ header{
 
 .trans_list li , .scat_list li{
     font-family: 'Gantari', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     color: #d4c4b6;
 }
@@ -336,8 +337,17 @@ header{
 
 }
 
+.elect img{
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .wrapper {
-    margin-top: auto;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -353,7 +363,7 @@ header{
 }
 
 .card {
-    width: 80px;
+    width: 120px;
     border-radius: .75rem;
     background-size: cover;
     background-position: center;
@@ -371,14 +381,15 @@ header{
     color: white;
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.667);
 }
 
 .card > .row > .icon {
-    background: #D4C4B6;
+    background: #ffffff;
     color: #2b2b2b;
-    border-radius: 50%;
+    border-radius: 25%;
     width: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,9 +413,9 @@ header{
 }
 
 .card > .row > .description > h4 {
-    font-size: 28px;
-    font-family: 'libre baskerville', serif;
-    font-weight: 800;
+    font-size: 36px;
+    font-family: 'Gantari', sans-serif;
+    font-weight: 500;
     color: #231709;
     margin: 0;
 }
@@ -414,7 +425,6 @@ header{
     font-family: 'Gantari', sans-serif;
     font-weight: 400;
     color: #231709;
-    margin-bottom: 10px;
 }
 
 .description p {
@@ -422,9 +432,7 @@ header{
     padding-top: 5px;
 }
 
-.description h4 {
-    text-transform: uppercase;
-}
+
 
 input {
     display: none;
@@ -454,6 +462,17 @@ input:checked + label .description {
 .card[for="c5"] {
     background-image: url('./img4.jpeg');
 }
+
+.ardcode img{
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /*------------------------result------------------*/
 /*------------------------ref------------------*/
 /*------------------------contact------------------*/

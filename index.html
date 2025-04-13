@@ -82,7 +82,7 @@
         <h1 data-aos="fade-up">Method</h1>
 
         <h2 data-aos="fade-up">Non-destructive testing</h2>
-        <p data-aos="fade-up">Noninvasive techniques to determine component or structure or quantitively measurement
+        <p data-aos="fade-up">>> Noninvasive techniques to determine component or structure or quantitively measurement
             (Inspect or measure without doing harm)</p>
         <h3 data-aos="fade-up">[ Detection&emsp;/&emsp;Location&emsp;/&emsp;Measurement&emsp;/&emsp;Characterization ]</h3>
 
@@ -120,9 +120,16 @@
             Our work is divided into two parts: the Electronic Part and the Mechanical Part.</p>
         
         <h5 data-aos="fade-up">Electronic Part</h5>
-        <p data-aos="fade-up">&emsp;&emsp;We have developed several electronic boards, including a high-voltage board designed for use with the Eberline 2x2 NaI detector and a Cs-137 source,
-             which operates at approximately 1000 V. Notably, this high-voltage setting can be adjusted directly on the board to accommodate different detectors, 
-             ensuring versatility in application.</p>
+        <p data-aos="fade-up">&emsp;&emsp;We have developed several electronic boards, including Amplifier, Single Channel Analysis(SCA),
+             High voltage powersupply(HV), and Low voltage power supply</p>
+        
+        <div class="elect">
+            <img src="elect.jpg" alt="Electronic circuit" data-aos="fade-up">
+        </div>
+        
+        <p data-aos="fade-up">&emsp;&emsp;Our HV board currently designed for use with the Eberline 2x2 NaI detector and a Cs-137 source,
+            which operates at approximately 1000 V. However, this high-voltage setting can be adjusted directly on the board to accommodate different detectors, 
+            ensuring versatility in application.</p>
 
         <div class="wrapper">
             <div class="container">
@@ -182,7 +189,26 @@
                 </label>
             </div>
         </div>
+
+        <p data-aos="fade-up">For our Arduino code, we divided it into 4 operation modes.</p>
+        <div class="ardcode">
+            <img src="ArdCode.jpg" alt="Electronic circuit" data-aos="fade-up">
+        </div>
+
+    <h5 data-aos="fade-up">Mechanic Part</h5>
+    <p data-aos="fade-up">&emsp;&emsp;We organized our electronic boards inside a metal box for easy inspection. 
+        Therefore, we discovered that our high voltage generates the most noise among all of the boards,  
+        whether the source of the noise is from the MOSFET or the transformer. 
+        To address this, we later placed the high-voltage board as far away from the amplifier board as possible. 
+        Additionally, we created a filter board and applied aluminum tape to help reduce the noise.
+    </p>
+
+    <p data-aos="fade-up">&emsp;&emsp;We also construct a framework to securely hold all components of the system. 
+        This includes using an angle iron to support our electronic box, a 200-liter tank, a radiation source (Cs-137), and a 2x2 NaI detector.</p>
+
     </div>
+
+    
 
     <div id="Result">
         <h2 data-aos="fade-up">Electronic Test</h2>
