@@ -525,17 +525,16 @@ input:checked + label .description {
 }
 
 
-.spectrum p, .volcal10s p,.levcal10s p, .volcal p, .liquidcal p, .error10s p{
+.testcard p {
     font-family: 'Gantari', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     background-color: #d4c4b6;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
+    
 }
+  
 
 .result p{
     text-align: center;
