@@ -526,18 +526,23 @@ input:checked + label .description {
 
 
 .testcard p {
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
     font-family: 'Gantari', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    background-color: #d4c4b6;
-    padding: 5px 10px;
-    border-radius: 10px;
+    color: #F2E5D7;
     
 }
   
-
-.result p{
+.interfacelink{
     text-align: center;
+}
+
+.interfacelink p{
     font-family: 'libre baskerville', serif;
     font-size: 26px;
     font-weight: 400;
@@ -547,17 +552,17 @@ input:checked + label .description {
     margin-top: 40px;
 }
 
-.result a{
-    text-align: center;
+.interfacelink a{
     font-family: 'libre baskerville', serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: white;
+    color: #F2E5D7;
     margin: 20px 0;
-    margin-top: 10px;
-    text-decoration: none;
+    margin-top: 40px;
 }
+
+
 /*------------------------ref------------------*/
 
 .ref ul{
