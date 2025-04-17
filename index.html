@@ -210,16 +210,72 @@
 
     
 
-    <div id="Result">
-        <h2 data-aos="fade-up">Electronic Test</h2>
-        <p data-aos="fade-up">Amplify/SCA/HV</p>
+    <div id="Result" class="result">
+        <h2 data-aos="fade-up">System Testing Results</h2>
 
-        <h2 data-aos="fade-up">Measurement Test</h2>
-        <p data-aos="fade-up">Cs Spectrum/Water Mea</p>
+        <div class="testcard">
+            <div class="spectrum">
+                <img src="CsSpect.jpg" alt="Cs-137 Spectrum" data-aos="fade-up">
+                <p>Graph showing the relationship between LLD value and count per 6 seconds 
+                    contributes to the Cs-137 spectrum used in this experiment.</p>
+            </div>
+
+            <div class="volcal10s">
+                <img src="10svolcal.jpg" alt="10 seconds volume calibrate" data-aos="fade-up">
+                <p>Graph of the relationship between the logarithm of the measured value and 
+                    the water volume used for volume calibration.</p>
+            </div>
+
+            <div class="levcal10s">
+                <img src="10slevcal.jpg" alt="10 seconds level calibrate" data-aos="fade-up">
+                <p>Graph of the relationship between the logarithm of the measured value and 
+                    the water level used for volume calibration.</p>
+            </div>
+
+            <div class="volcal">
+                <img src="volumecal.jpg" alt="volume calibration" data-aos="fade-up">
+                <p>Graph of the relationship between the actual water volume and the volume obtained from the developed measurement system.</p>
+            </div>
+
+            <div class="liquidcal">
+                <img src="liquidcal.jpg" alt="level calibration" data-aos="fade-up">
+                <p>Graph of the relationship between the actual water level and the level obtained from the developed measurement system.</p>
+            </div>
+
+            <div class="error10s">
+                <img src="10serror.jpg" alt="10 seconds error" data-aos="fade-up">
+                <p>Percentage of maximum error at different volumes and theoretical error</p>
+            </div>
+            
+        </div> 
+
+        <p data-aos="fade-up">Connect to our system and click the link below to access the web interface.</p>
+        <a href="https://limearad.netlify.app/" class="systemlink" data-aos="fade-up">>> Web control interface</a>
+
     </div>
 
-    <div id="Ref">
+    <div id="Ref" class="ref">
         <h2 data-aos="fade-up">References</h2>
+        <ul class="reflist">
+            <li data-aos="fade-up">Daggett, E.H., J.M. Goode, J.W. Heyd, and R.L. Shipp, DETERMINATION OF THE LIQUID LEVEL IN A STEEL CYLINDER BY GAMMA ABSORPTION. 1952: United States.</li>
+            <li data-aos="fade-up">ผศ. สุวิทย์ ปุณณชัยยะ, ร.ด.ธ.ส., ผศ. นเรศร์ จันทน์ขาว เครื่องวัดและควบคุมระดับของเหลวด้วยเทคนิคนิวเคลียร์. 2531.</li>
+            <li data-aos="fade-up">3. เพลิดพริ้ง, ธ., การพัฒนาระบบวัดรังสีแบบโมดูลขนาดเล็ก. 2549.</li>
+            <li data-aos="fade-up">Kamontip Ploykrachang, D.T.-A., Suvit Punnachaiya and Somchai Baotong, Pocket PC-based portable gamma-ray spectrometer. 2010.</li>
+            <li data-aos="fade-up">Chuong, H.D., N.T. Hai Yen, N.T. My Le, and H.D. Tam, Determining the density of liquid using gamma scattering method. Applied Radiation and Isotopes, 2020. 163: p. 109197.</li>
+            <li data-aos="fade-up">พงศ์พันธุ์สุข, ส. รังสี. 2021.</li>
+            <li data-aos="fade-up">Pothavorn, P. รู้เท่าทันรังสี. 2020.</li>
+            <li data-aos="fade-up">Advanced Laboratory, P. INTERACTIONS OF GAMMAS. 2001.</li>
+            <li data-aos="fade-up">Davisson, C.M., II - INTERACTION OF γ-RADIATION WITH MATTER, K.A.I. Siegbahn, Editor. 1968: Elsevier: Amsterdam. p. 37-78.</li>
+            <li data-aos="fade-up">Alallak, N.A. and S.S. Sarhan, Factors affecting gamma ray transmission. Jordan Journal of Physics, 2012. 5(2): p. 77-88.</li>
+            <li data-aos="fade-up">Bjørnstad, T. and E. Stamatakis, Scaling studies with gamma transmission technique. 2006.</li>
+            <li data-aos="fade-up">Kerlin, T.W. and B.R. Upadhyaya, Chapter 16 - Nuclear plant instrumentation, in Dynamics and Control of Nuclear Reactors, T.W. Kerlin and B.R. Upadhyaya, Editors. 2019, Academic Press. p. 213-235.</li>
+            <li data-aos="fade-up">พลอยกระจ่าง, อ.ด.ก., เอกสารประกอบการเรียนวิชา 2111304 การปรับเทียบอุปกรณ์ขยายสัญญาณพัลส์ (Pulser Amplifier Colibration). 2566, ภาควิชาวิศกรรมนิวเคลียร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย; กรุงเทพฯ.</li>
+            <li data-aos="fade-up">พลอยกระจ่าง, อ.ด.ก., เอกสารประกอบการเรียนวิชา 2111304 การทำงานของอุปกรณ์วิเคราะห์สัญญาณแบบช่องเดี่ยว (Single Channel Analyzer); SCA. 2566, ภาควิชาวิศกรรมนิวเคลียร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย; กรุงเทพฯ.</li>
+            <li data-aos="fade-up">Hashemi-Pour, C. What is a microcontroller (MCU)? 2024 August 2024 [cited 2024 25 Sep.].</li>
+            <li data-aos="fade-up">Invention, T. ทำความรู้จัก : บอร์ด ไมโครคอนโทรลเลอร์ ARDUINO UNO R3 คืออะไร ใช้งานอะไรได้บ้าง. 2021.</li>
+            <li data-aos="fade-up">Tracking 0 ~ ±15V regulator circuit diagram. 2012 December 18 [cited 2025 April 15].</li>
+            <li data-aos="fade-up">Barman, S., 7805 DC 5V Regulator Module. 2023 April 14 [cited 2025 April 15].</li>
+        </ul>
     </div>
 
     <div id="Contact" class="contact">

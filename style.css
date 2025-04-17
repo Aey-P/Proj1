@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Scope+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+
 
 *{
     margin: 0;
@@ -34,7 +36,7 @@ header{
     justify-content: space-between; /* arrange fb */
     align-items: center;
     z-index: 99; /*Layering to front>*/
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.526);
   
 }
 
@@ -474,7 +476,117 @@ input:checked + label .description {
 }
 
 /*------------------------result------------------*/
+
+.result h2{
+    font-family: 'island moments', cursive;
+    font-weight: 100;
+    font-size: 100px;
+    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+    color: #2b2b2b;
+
+}
+
+.testcard{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+    
+}
+
+.testcard img{
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+.spectrum, .volcal10s ,.levcal10s, .volcal, .liquidcal, .error10s{
+    margin: 30px; /* spacing between cards */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.spectrum p, .volcal10s p,.levcal10s p, .volcal p, .liquidcal p, .error10s p{
+    font-family: 'Gantari', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #d4c4b6;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.result p{
+    text-align: center;
+    font-family: 'libre baskerville', serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2b2b2b;
+    margin: 20px 0;
+    margin-top: 40px;
+}
+
+.result a{
+    text-align: center;
+    font-family: 'libre baskerville', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #d4c4b6;
+    margin: 20px 0;
+    margin-top: 10px;
+    text-decoration: none;
+}
 /*------------------------ref------------------*/
+
+.ref ul{
+    list-style-type: decimal;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.ref ul li{
+    font-family: 'athiti', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #d4c4b6;
+    margin: 20px 0;
+}
+
+.ref h2{
+    font-family: 'libre baskerville', serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #d4c4b6;
+}
+
 /*------------------------contact------------------*/
 
 .contact h2{
@@ -557,4 +669,5 @@ input:checked + label .description {
         flex-direction: column;
         background-size: cover;
     }
+    
 }
